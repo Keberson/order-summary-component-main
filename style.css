@@ -13,7 +13,10 @@ html, body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: hsl(225, 100%, 98%);
+    background-image: url("images/pattern-background-desktop.svg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
 }
 
 .content {
@@ -21,6 +24,119 @@ html, body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 696px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+}
+
+.order_top-image {
+    width: 100%;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.order_data {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 54px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order_title {
+    font-weight: 900;
+    font-size: 28px;
+    color: hsl(223, 47%, 23%);
+}
+
+.order_description {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+.order_plan {
+    box-sizing: border-box;
+    padding: 25px 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    border-radius: 10px;
+}
+
+.order_plan_description {
+    display: flex;
+    text-align: center;
+    column-gap: 20px;
+}
+
+.order_plan_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.order_plan_title {
+    font-size: 16px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.order_plan_price {
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.order_plan_change {
+    font-weight: 700;
+    font-size: 16px;
+    color: hsl(245, 75%, 52%);
+}
+
+.order_plan_change:hover {
+    text-decoration: none;
+    opacity: 70%;
+}
+
+.order_submit {
+    box-sizing: border-box;
+    padding: 15px 0;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%);
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.order_submit:hover {
+    opacity: 70%;
+}
+
+.order_cancel {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(224, 23%, 55%);
+}
+
+.order_cancel:hover {
+    color: hsl(223, 47%, 23%);
 }
 
 .attribution {

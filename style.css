@@ -31,8 +31,15 @@ html, body {
     flex-direction: column;
     width: 450px;
     height: 696px;
-    background-color: hsl(225, 100%, 98%);
+    background-color: hsl(0, 100%, 100%);
     border-radius: 20px;
+}
+
+@media screen and (max-width: 376px) {
+    .order {
+        width: 327px;
+        height: 567px;
+    }
 }
 
 .order_top-image {
@@ -51,10 +58,22 @@ html, body {
     justify-content: space-between;
 }
 
+@media screen and (max-width: 376px) {
+    .order_data {
+        padding: 38px 24px;
+    }
+}
+
 .order_title {
     font-weight: 900;
     font-size: 28px;
     color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 376px) {
+    .order_title {
+        font-size: 24px;
+    }
 }
 
 .order_description {
@@ -64,6 +83,12 @@ html, body {
     color: hsl(224, 23%, 55%);
 }
 
+@media screen and (max-width: 376px) {
+    .order_description {
+        padding: 0 6px;
+    }
+}
+
 .order_plan {
     box-sizing: border-box;
     padding: 25px 24px;
@@ -71,8 +96,14 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: hsl(225, 100%, 94%);
+    background-color: hsl(225, 100%, 98%);
     border-radius: 10px;
+}
+
+@media screen and (max-width: 376px) {
+    .order_plan {
+        padding: 17px 16px;
+    }
 }
 
 .order_plan_description {
@@ -85,6 +116,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: space-between;
 }
 
 .order_plan_title {
@@ -105,6 +137,12 @@ html, body {
     color: hsl(245, 75%, 52%);
 }
 
+@media screen and (max-width: 376px) {
+    .order_plan_change {
+        font-size: 14px;
+    }
+}
+
 .order_plan_change:hover {
     text-decoration: none;
     opacity: 70%;
@@ -122,6 +160,7 @@ html, body {
     color: hsl(225, 100%, 98%);
     font-size: 16px;
     font-weight: 900;
+    box-shadow: 0 20px 20px 0 hsl(245, 75%, 52%, 15%);
 }
 
 .order_submit:hover {
